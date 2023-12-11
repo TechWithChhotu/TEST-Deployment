@@ -25,7 +25,7 @@ const handleSave = async (e) => {
 };
 const handleDelete = async (e) => {
   e.preventDefault();
-  const res = await axios.get("http://localhost:3000/delete", {
+  const res = await axios.get(`${window.location.origin}/delete`, {
     withCredentials: true,
   });
 
